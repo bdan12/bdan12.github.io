@@ -1,0 +1,97 @@
+<!DOCTYPE html>>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=""viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&
+    display=swap" rel="stylesheet">
+    <title>Wave Monitoring Sensor Data</title>
+</head>
+<style>
+    body {
+    background: rgb(40, 171, 227);
+    font-family: 'Roboto', sans-serif;
+    }
+
+    .mytabs {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: 50px auto;
+        padding 25px;
+    }
+
+    .mytabs input[type="radio"] {
+        display: none;
+    }
+
+    .mytabs label {
+        padding: 25px;
+        background: #e1e1e1;
+        font-weight: bold;
+    }
+
+    .mytabs .tab {
+        width: 100%;
+        padding: 20px;
+        background: #fff;
+        order: 1;
+        display: none;
+    }
+
+    .mytabs .tab h2 {
+        font-size: 3em;
+    }
+
+    .mytabs input[type="radio"]:checked + label + .tab {
+        display: block;
+    }
+
+    .mytabs input[type="radio"]:checked + label {
+        background: #fff;
+    }
+</style>
+<body>
+    <div class="mytabs">
+        <input type="radio" id="tabfree" name="mytabs" checked="checked">
+        <label for="tabfree">Wave Height</label>
+        <div class="tab">
+            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
+            src="file:///C:/Users/field/Documents/Wave%20Mast%20Data/water_level.html" 
+            height="600" width="100%"></iframe>
+            
+        </div>
+
+        <input type="radio" id="tabtemp" name="mytabs">
+        <label for="tabtemp">Air Temperature/Humidity</label>
+        <div class="tab">
+            
+            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
+            src="G:\\Shared%20drives\\SAFL_Boat%20Wake%20and%20Wash%20Program\\Citizen%20Science_wave%20mast\\temp_humd.html" 
+            height="600" width="100%"></iframe>
+            
+        </div>
+
+
+        <input type="radio" id="tabwdir" name="mytabs">
+        <label for="tabwdir">Wind Speed/Direction</label>
+        <div class="tab">
+            
+            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
+            src="G:\\Shared%20drives\\SAFL_Boat%20Wake%20and%20Wash%20Program\\Citizen%20Science_wave%20mast\\wind_spd_dir.html"
+            height="600" width="100%"></iframe>
+            
+        </div>
+
+        <input type="radio" id="tabbatt" name="mytabs">
+        <label for="tabbatt">Battery Level</label>
+        <div class="tab">
+
+            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
+            src="G:\\Shared%20drives\\SAFL_Boat%20Wake%20and%20Wash%20Program\\Citizen%20Science_wave%20mast\\battery_level.html" 
+            height="600" width="100%"></iframe>
+            
+        </div>
+    </div>
+</body>
+</html>
