@@ -1,16 +1,17 @@
-<!DOCTYPE html>>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Wave Monitoring Sensor Data</title>
     <meta charset="UTF-8">
     <meta name=""viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&
     display=swap" rel="stylesheet">
-    <title>Wave Monitoring Sensor Data</title>
 </head>
 <style>
     body {
-    background: rgb(40, 171, 227);
-    font-family: 'Roboto', sans-serif;
+        display: grid; 
+        background: rgb(108, 23, 23);
+        font-family: 'Roboto', sans-serif;
     }
 
     .mytabs {
@@ -53,7 +54,25 @@
 </style>
 <body>
     <div class="mytabs">
+    
         <input type="radio" id="tabfree" name="mytabs" checked="checked">
+        <label for="tabfree">About</label>
+        <div class="tab">
+            <div class="row">
+                <img src="file:///C:/Users/field/Downloads/IMG_1763 (1).jpg" align="right" height="500" width="40%" alt="img"/>
+                <p> <h3>Wave Monitoring on Spearhead Lake</h3> </p>
+                <br>
+                <p><u>Update: August 18, 2022</u></p>
+                <p>Our prototype wave monitoring device has been successfully deployed at Spearhead Lake. The senors used in this device 
+                    include: (from bottom up) ultrasonic rangefinder (records the distance to the water surface), temperature sensor (records 
+                    the temperature and humidity of the air), control box (stores the battery and other electronics used to collect and transfer the data), 
+                    solar panel (charges the battery), and anemometer (records the wind speed and direction). We are currently working on processing the 
+                    data for display. The current plots include data recorded on a single day.
+                </p>
+            </div>
+        </div>
+    
+        <input type="radio" id="tabfree" name="mytabs">
         <label for="tabfree">Wave Height</label>
         <div class="tab">
             <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
@@ -67,7 +86,7 @@
         <div class="tab">
             
             <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
-            src="https://bdan12.github.io/temp_humd.html" 
+            src="G:\\Shared%20drives\\SAFL_Boat%20Wake%20and%20Wash%20Program\\Citizen%20Science_wave%20mast\\temp_humd.html" 
             height="600" width="100%"></iframe>
             
         </div>
@@ -78,7 +97,7 @@
         <div class="tab">
             
             <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
-            src="https://bdan12.github.io/wind_spd_dir.html"
+            src="G:\\Shared%20drives\\SAFL_Boat%20Wake%20and%20Wash%20Program\\Citizen%20Science_wave%20mast\\wind_spd_dir.html"
             height="600" width="100%"></iframe>
             
         </div>
@@ -88,7 +107,7 @@
         <div class="tab">
 
             <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
-            src="https://bdan12.github.io/battery_level.html" 
+            src="https://github.com/bdan12/bdan12.github.io/blob/main/battery_level.html" 
             height="600" width="100%"></iframe>
             
         </div>
