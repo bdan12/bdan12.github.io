@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Wave Monitoring Sensor Data</title>
+    <title><img src="file:///C:/Users/field/Downloads/SaflLogo.jpg" align="center" alt="img"/></title>
     <meta charset="UTF-8">
     <meta name=""viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&
     display=swap" rel="stylesheet">
 </head>
 <style>
+    
+    p{
+        position: relative;
+        bottom:0;
+    }
     .center {
         display: block;
-        margin-left: auto;
+        margin-left: 0;
         margin-right: auto;
     }
-                                  
     body {
         display: grid; 
-        background: rgb(5, 166, 201);
+        background: #fff;
         font-family: 'Roboto', sans-serif;
     }
 
     .mytabs {
-        display: flex;
+        display: inline-flex;
+        position: relative;
         flex-wrap: wrap;
-        max-width: 1000px;
-        margin: 50px auto;
-        padding 25px;
+        max-width: auto;
+        padding: 0;
     }
 
     .mytabs input[type="radio"] {
@@ -39,17 +43,24 @@
     }
 
     .mytabs .tab {
+        position: relative;
         width: 100%;
-        padding: 20px;
+        margin-right: auto;
         background: #fff;
         order: 1;
         display: none;
+        padding: 25px;
     }
 
     .mytabs .tab h2 {
-        font-size: 3em;
+        font-size: auto;
     }
-
+    
+    .mytabs .tab .row{
+        width: 50%;
+        display: table-cell;
+        padding: 100px;
+    }
     .mytabs input[type="radio"]:checked + label + .tab {
         display: block;
     }
@@ -59,11 +70,12 @@
     }
 </style>
 <body>
-    <div class="safllogo">
-        <img src="https://bdan12.github.io/SaflLogo.jpg" class="center" alt="img"/>
-    </div>
     <div class="mytabs">
-    
+
+        <div class="safllogo">
+            <img src="file:///C:/Users/field/Downloads/SaflLogo.jpg" class="center" height="70px" alt="img"/>
+        </div>
+
         <input type="radio" id="tabfree" name="mytabs" checked="checked">
         <label for="tabfree">About</label>
         <div class="tab">
@@ -79,6 +91,11 @@
                     data for display. The current plots include data recorded on a single day.
                 </p>
             </div>
+            </div>
+            <div>
+                <img src="file:///C:/Users/field/Downloads/IMG_1763 (1).jpg"  height="500" alt="img"/>
+            </div>
+
         </div>
     
         <input type="radio" id="tabfree" name="mytabs">
@@ -95,8 +112,8 @@
         <div class="tab">
             
             <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
-            src="https://bdan12.github.io/temp_humd.html" 
-            height="600" width="100%"></iframe>
+            src="https://bdan12.github.io/temp_humd.html"
+            height="700" width="100%"></iframe>
             
         </div>
 
@@ -107,7 +124,7 @@
             
             <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
             src="https://bdan12.github.io/wind_spd_dir.html"
-            height="600" width="100%"></iframe>
+            height="700" width="100%"></iframe>
             
         </div>
 
@@ -117,7 +134,7 @@
 
             <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
             src="https://bdan12.github.io/battery_level.html" 
-            height="600" width="100%"></iframe>
+            height="700" width="100%"></iframe>
             
         </div>
     </div>
